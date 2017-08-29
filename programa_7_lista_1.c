@@ -61,20 +61,28 @@ int main(){
         scanf("%c", &comando);
         switch(comando){
         case 'w':
-            if(y > 1)
+            if(y > 1){
                 y--;
+                contador_passos++;
+            }
             break;
         case 's':
-            if(y < n - 2)
+            if(y < n - 2){
                 y++;
+                contador_passos++;
+            }
             break;
         case 'a':
-            if(x > 1)
+            if(x > 1){
                 x--;
+                contador_passos++;
+            }
             break;
         case 'd':
-            if(x < n - 2)
+            if(x < n - 2){
                 x++;
+                contador_passos++;
+            }
             break;
         case 'q':
             continue;
